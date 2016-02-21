@@ -18,5 +18,8 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include('user.urls', namespace='user')),
+
+    url(r'^', include('wildbasketball.urls', namespace='wildbasketball')),
+    # url(r'^wildbasketball/', 'wildbasketball.urls'),
+    url(r'^user/', include('user.urls', namespace='user')),
 ]

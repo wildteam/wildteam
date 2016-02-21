@@ -17,7 +17,7 @@ def deal_login(req):
 
 
 def register(req):
-    return render(req, 'register.html')
+    return render(req, 'login.html')
     pass
 
 
