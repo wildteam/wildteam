@@ -9,11 +9,11 @@
     <!-- 可选的Bootstrap主题文件（一般不用引入） -->
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="/static/js/angular.js"></script>
-    <script src="/static/js/app.js"></script>
-    <script src="/static/js/services.js"></script>
-    <script src="/static/js/controllers.js"></script>
-    <script src="/static/js/filters.js"></script>
-    <script src="/static/js/directives.js"></script>
+    <script src="/static/js/user-app.js"></script>
+    <script src="/static/js/user-services.js"></script>
+    <script src="/static/js/user-controllers.js"></script>
+    <script src="/static/js/user-filters.js"></script>
+    <script src="/static/js/user-directives.js"></script>
 
 
 
@@ -73,6 +73,7 @@
                     <div class="tab-pane" id="panel-666097">
 
                             <form class="form-horizontal" ng-submit="registerForm()">
+                                {% csrf_token %}
                                 <div class="control-group">
                                     <h1 style="color: green">野生篮球社区</h1>
                                     <h6 style="color: gray">追梦路上没有天赋要求</h6>
